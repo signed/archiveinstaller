@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 
 ###############################################################################
 
-NAME = "archiveinstaller"
+NAME = "archive-installer"
 PACKAGES = find_packages(where="src")
 META_PATH = os.path.join("src", "archiveinstaller", "__init__.py")
 CLASSIFIERS = [
