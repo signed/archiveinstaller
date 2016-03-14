@@ -14,3 +14,6 @@
   - links
     - https://pypi.python.org/pypi/zc.buildout/2.5.0
     - https://www.jetbrains.com/pycharm/help/buildout-support.html
+
+- TDD in python
+  - http://pythontesting.net/start-here/
