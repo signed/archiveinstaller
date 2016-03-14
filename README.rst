@@ -6,3 +6,6 @@ Depending on the configuration you pass additional environment and path variable
 ## Installation
 
 to be done
+
+## Development
+python setup.py sdist bdist_wheel
