@@ -1,2 +1,2 @@
-include *.rst *.txt LICENSE
+include *.sh *.rst *.txt LICENSE
 recursive-include tests *.py
