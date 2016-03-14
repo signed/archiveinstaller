@@ -1,5 +1,7 @@
 - deploy to pypi
   - https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
+  - https://jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
+  - http://www.pydanny.com/cookie-project-templates-made-easy.html
 
 - checkout buildout
   - is it an alternative to virtual env?
