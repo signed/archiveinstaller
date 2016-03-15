@@ -4,7 +4,6 @@ import re
 
 from setuptools import setup, find_packages
 
-
 ###############################################################################
 
 NAME = "archive-installer"
@@ -19,7 +18,8 @@ CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 2.7"
 ]
-INSTALL_REQUIRES = []
+INSTALL_REQUIRES = ['requests', 'pathlib2']
+TEST_REQUIRES = ['mock', 'PyHamcrest']
 
 ###############################################################################
 
@@ -51,28 +51,23 @@ def find_meta(meta):
     raise RuntimeError("Unable to find __{meta}__ string.".format(meta=meta))
 
 
-URI = find_meta("uri")
-LONG = (
-    read("README.rst")
-)
-
-
 if __name__ == "__main__":
     setup(
             name=NAME,
             description=find_meta("description"),
             license=find_meta("license"),
-            url=URI,
+            url=find_meta("uri"),
             version=find_meta("version"),
             author=find_meta("author"),
             author_email=find_meta("email"),
             maintainer=find_meta("author"),
             maintainer_email=find_meta("email"),
-            long_description=LONG,
+            long_description=read("README.rst"),
             packages=PACKAGES,
             package_dir={"": "src"},
             zip_safe=False,
             classifiers=CLASSIFIERS,
             install_requires=INSTALL_REQUIRES,
             include_package_data=True,
+            tests_require=TEST_REQUIRES,
     )
