@@ -1,4 +1,5 @@
 - deploy to pypi
+  - https://wiki.python.org/moin/TestPyPI
   - https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
   - https://jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
   - http://www.pydanny.com/cookie-project-templates-made-easy.html
