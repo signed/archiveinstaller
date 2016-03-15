@@ -18,7 +18,7 @@ CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 2.7"
 ]
-INSTALL_REQUIRES = ['requests', 'pathlib2']
+INSTALL_REQUIRES = ['requests', 'ndg-httpsclient', 'pathlib2']
 TEST_REQUIRES = ['mock', 'PyHamcrest']
 
 ###############################################################################
