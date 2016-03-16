@@ -1,4 +1,0 @@
-include *.rst LICENSE
-recursive-include src *.sh
-recursive-include tests *.py
-global-exclude .DS_Store
