@@ -77,4 +77,5 @@ if __name__ == "__main__":
             package_data={
                 'archiveinstaller.shell': ['application.sh'],
             },
+            include_package_data=True,
     )
