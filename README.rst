@@ -10,7 +10,6 @@ to be done
 ## Development
 
 ## Release
-python setup.py register -r pypitest
-python setup.py sdist upload -r pypitest
-python setup.py bdist_wheel upload
-
+python setup.py bdist_wheel
+twine register dist/*
+twine upload dist/*
