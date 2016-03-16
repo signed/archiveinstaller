@@ -20,6 +20,12 @@ CLASSIFIERS = [
 ]
 INSTALL_REQUIRES = ['requests', 'ndg-httpsclient', 'pathlib2']
 TEST_REQUIRES = ['mock', 'PyHamcrest']
+LONG_DESCRIPTION="""archiveinstaller
+================
+
+Takes the url of an archive (tar or zip) downloads it and extracts it to a location of your choice.
+Depending on the configuration you pass additional environment and path variables are added.
+"""
 
 ###############################################################################
 
@@ -50,7 +56,6 @@ def find_meta(meta):
         return meta_match.group(1)
     raise RuntimeError("Unable to find __{meta}__ string.".format(meta=meta))
 
-
 if __name__ == "__main__":
     setup(
             name=NAME,
@@ -62,7 +67,7 @@ if __name__ == "__main__":
             author_email=find_meta("email"),
             maintainer=find_meta("author"),
             maintainer_email=find_meta("email"),
-            long_description=read("README.rst"),
+            long_description=LONG_DESCRIPTION,
             packages=PACKAGES,
             package_dir={"": "src"},
             zip_safe=False,
