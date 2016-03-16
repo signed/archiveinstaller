@@ -8,4 +8,9 @@ Depending on the configuration you pass additional environment and path variable
 to be done
 
 ## Development
-python setup.py sdist bdist_wheel
+
+## Release
+python setup.py register -r pypitest
+python setup.py sdist upload -r pypitest
+python setup.py bdist_wheel upload
+
