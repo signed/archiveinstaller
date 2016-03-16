@@ -1,5 +1,8 @@
 - deploy to pypi
   - https://wiki.python.org/moin/TestPyPI
+  - official steps
+    - https://packaging.python.org/en/latest/distributing/
+    - https://packaging.python.org/en/latest/distributing/
   - https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
     - http://stackoverflow.com/a/25964691
     - https://blog.ionelmc.ro/2015/02/24/the-problem-with-packaging-in-python/
