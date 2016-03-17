@@ -4,6 +4,23 @@ Takes the url of an archive (tar or zip) downloads it and extracts it to a locat
 Depending on the configuration you pass additional environment and path variables are added.
 
 ## Release
+
+
+1. create .pypirc in your home directory
+```
+[distutils]
+index-servers=
+    pypi
+    pypitest
+
+[pypitest]
+repository = https://testpypi.python.org/pypi
+username = <username>
+
+[pypi]
+repository = https://pypi.python.org/pypi
+username = <username>
+```
 1. python setup.py bdist_wheel
 1. twine register -r test dist/*
 1. twine upload -r test dist/*
@@ -11,5 +28,6 @@ Depending on the configuration you pass additional environment and path variable
 1. pip install --index-url https://testpypi.python.org/pypi --extra-index-url https://pypi.python.org/simple archive-installer
 1. set the new version in __init__.py
 1. rm -Rf build dist
+1. python setup.py bdist_wheel
 1. twine register -r pypi dist/*
 1. twine upload -r pypi dist/*
