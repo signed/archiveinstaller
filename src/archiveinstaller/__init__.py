@@ -1,4 +1,4 @@
-__version__ = "2016.1.0.dev2"
+__version__ = "2016.1.0"
 
 __title__ = "archiveinstaller"
 __description__ = "User local application installer without hassle."
